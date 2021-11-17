@@ -19,11 +19,9 @@ the auxiliary reading code.
 ![Alt text](CARM_flowchart.png?raw=true "Title")
 
 # How to run it?
-How to run the code?
-1) Edit constants.py to specify the initial parameters, the absolute path to the data, stellar and orbital parameters.
+In the current version you need to have a CaRM copy for each run. First make a copy to the folder where you will run it. Next all the input is made changing the values of the "constants.py" file. For that it is needed to provide the radial velocity data, optionally in the following formats:
+1)Folders with HARPS or ESPRESSO CCF files:
+rvs_paths=[[folder_night1],[folder_night2],...]
 
-2) Run orderfit.py in the shell :  python2.x orderfit.py 
-   OR
-   Run orderfit.py in the shell :  python3.x orderfit.py 
-   OR
-   Run orderfit_slurm.sh to run it in supernova: sbatch orderfit_slurm.sh
+2) Text files with RVs:
+rvs_paths=[[night1_bin1.txt,night1_bin2.txt,...],[night2_bin1.txt,night2_bin2.txt,...],...]
