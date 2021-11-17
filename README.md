@@ -4,7 +4,7 @@ CaRM- Python implementation of the Chromatic Rossiter-McLaughlin effect to retri
 ![Alt text](carm.png?raw=true "Title")
 # Chromatic Rossiter–McLaughlin
 
-CaRM is a software written in Python(2.xx and 3.xx) to compute, using a Markov chain Monte
+CaRM is a software written in Python3.8 to compute, using a Markov chain Monte
 Carlo (MCMC) algorithm, the radial velocity curves including the RM effect and retrieve
 the transmission spectrum of a target. Broadly there is a constants.py file were the
 user gives the input of the properties of the system. From
