@@ -22,7 +22,16 @@ the auxiliary reading code.
 In the current version you need to have a CaRM copy for each run. First make a copy to the folder where you will run it. Next all the input is made changing the values of the "constants.py" file. For that it is needed to provide the radial velocity data, optionally in the following formats:
 
 1) Folders with HARPS or ESPRESSO CCF files:
-rvs_paths=[[folder_night1],[folder_night2],...]
+rvs_paths=[[folder_night1],[folder_night2],...];
 
 2) Text files with RVs:
-rvs_paths=[[night1_bin1.txt,night1_bin2.txt,...],[night2_bin1.txt,night2_bin2.txt,...],...]
+rvs_paths=[[night1_bin1.txt,night1_bin2.txt,...],[night2_bin1.txt,night2_bin2.txt,...],...].
+
+If you go with the text files RVs option, you will need to provide them in the following format:
+
+#Initial_wavelength, final_wavelength [nm]
+#Observing time [BJD],RV[km/s],RV_ERR[km/s]
+Comma separated data
+.
+.
+.
