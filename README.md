@@ -8,7 +8,7 @@ CaRM is a software written in Python(2.xx and 3.xx) to compute, using a Markov c
 Carlo (MCMC) algorithm, the radial velocity curves including the RM effect and retrieve
 the transmission spectrum of a target. Broadly there is a constants.py file were the
 user gives the input of the properties of the system. From
-there to the final output the code can behave automatically as black box. The green
+there to the final output the code can behave automatically as a black box. The green
 boxes represent the two main processes to complete the user inputs, compute the RVs
 from the CCF files and organize the data. The MCMC algorithm will fit the
 RM curves and update the wavelength independent parameters. When the code finishes
