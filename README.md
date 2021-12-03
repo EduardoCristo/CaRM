@@ -11,9 +11,7 @@ user gives the input of the properties of the system. From
 there to the final output the code can behave automatically as a black box. The green
 boxes represent the two main processes to complete the user inputs, compute the RVs
 from the CCF files and organize the data. The MCMC algorithm will fit the
-RM curves and update the wavelength independent parameters. When the code finishes
-results.fits (the output) file will contain all the data generated from the processes
-in the software to allow the visualization and retrieval of the results, white boxes, with
+RM curves and update the wavelength independent parameters. The code builds a data.pkl file where it is saved, bin by bin sequentially, the data generated from the processes in the software to allow the visualization and retrieval of the results with
 the auxiliary reading code.
 
 ![Alt text](CARM_flowchart.png?raw=true "Title")
