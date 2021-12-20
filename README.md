@@ -19,22 +19,25 @@ the auxiliary reading code.
 # The models
 To fit the Rossiter-McLaughlin anomaly, CaRM incorporates two models: ARoME (Boué et al. 2013) and Ohta et al. (2005) (implemented in PyAstronomy, Czesla et al. 2019). The parameters of each model can be accessed with the following keys:
 
-## ARoME
+### PyAstronomy RM model
 vsys- Systematic velocity of the system [km/s];  
 rp- Radius of the transiting planet [R_*];  
 k- Keplerian semi-amplitude [km/s];  
-sma
-inc
-lda
-ldc
-Vrot
-Is
-Omega
-dT0
-sigw
-act_slope
-ln_a
-ln_tau
+sma- Semi-major axis [R_*];  
+inc- Orbital inclination [degrees];  
+lda- Spin-orbit angle [degrees];  
+Vrot- Projected stellar rotation velocity [km/s];  
+Is- Inclination of stellar rotation axis [degrees];
+Omega- Angular rotation velocity (star) [rad/s];
+### ARoME
+
+
+#### Adittional (common to all models)
+dT0- Mid transit time shift (phase);  
+sigw- Log jitter amplitude;  
+act_slope- Phase dependent;  
+ln_a- Log-amplitude of the GP kernel;  
+ln_tau- Log-timescale of the GP kernel;  
 
 # How to run it?
 In the current version you need to have a CaRM copy for each run. First make a copy to the folder where you will run it. Next all the input is made changing the values of the "constants.py" file. For that it is needed to provide the radial velocity data, optionally in the following formats:
