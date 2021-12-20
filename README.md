@@ -17,12 +17,12 @@ the auxiliary reading code.
 ![Alt text](CARM_flowchart.png?raw=true "Title")
 
 # The models
-To fit the Rossiter-McLaughlin anomaly, CaRM incorporates two models: ARoME (Boué et al. 2013) and Ohta et al. (2005) (implemented in PyAstronomy, Czesla et al. 2019).
+To fit the Rossiter-McLaughlin anomaly, CaRM incorporates two models: ARoME (Boué et al. 2013) and Ohta et al. (2005) (implemented in PyAstronomy, Czesla et al. 2019). The parameters of each model can be accessed with the following keys:
 
-ARoME
-vsys    - Systematic velocity of the system
-rp      - Radius ratio between planet and host star
-k       -
+## ARoME
+vsys- Systematic velocity of the system [km/s];  
+rp- Radius of the transiting planet [R_*];  
+k- Keplerian semi-amplitude [km/s];  
 sma
 inc
 lda
